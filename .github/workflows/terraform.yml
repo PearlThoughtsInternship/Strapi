@@ -27,7 +27,7 @@ jobs:
           ARM_TENANT_ID: ${{ secrets.TENANT_ID }}
     
         run: |
-          cd ${{ github.workspace }}/Terraform_Strapi_v1
+          cd ${{ github.workspace }}/terraform.yml
           terraform init --upgrade
           terraform plan
           terraform apply -auto-approve
